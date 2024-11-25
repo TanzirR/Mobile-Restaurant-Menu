@@ -1,0 +1,126 @@
+body{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 600px;
+    font-family: "Smythe", system-ui;
+    font-weight: 100;
+   
+}
+
+header{
+   background-image: url(./images/burger-image.jfif); 
+   height: 170px;
+   background-position: -40px -175px; /* Position the background image */
+   margin-top: -22px;
+   margin-bottom: 40px;
+}   
+
+#heading, #sub-heading {
+    color:white;  
+    font-weight: 100;
+    padding-left: 60px;
+}
+#heading{
+    padding-top: 30px;
+    margin-bottom: -10px;
+}
+
+.container{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+img{
+    width: 80px;
+    height: 80px;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D2D2D2;
+    
+}
+/* Div containing Image, name and ingredients */
+.food-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.food-ingredients{
+    
+    margin-top: -20px;
+    margin-bottom: -7px;
+    color: #8B8B8B;
+    
+}
+.food-title{
+    padding-top: 25px;
+    font-weight: 100;
+    
+}
+.food-price{
+    
+    padding-bottom: 20px;
+    font-weight: 100;
+}
+
+.btn{
+
+    background-color: white;
+    border: #DEDEDE solid 2px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    color: #3C3C3C;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    padding-bottom: 10px;
+    
+}
+
+#order-title{
+    margin: 50px auto 10px auto;
+    width: 100px;
+}
+
+#ordered-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#ordered-list, #total-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#total-price{
+    border-top: 1px solid black;
+}
+
+#rm-btn{
+    border: none;
+    background: none;
+    padding-top: 8px;
+    color: #BBBBBB;
+}
+
+
+
+#complete-order-btn{
+    width: 560px;
+    padding: 20px;
+    margin: 40px auto;
+    border: none;
+    background-color: #16DB99;
+    color:white;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 4px; 
+}
+
