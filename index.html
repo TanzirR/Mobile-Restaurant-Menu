@@ -16,13 +16,16 @@
             <h2 id = "sub-heading">The best burgers and pizzas in town</h2>
         </header>
         <!-- Food items rendered in container div -->
+        
         <div class = "container" id = "container"></div>
-
+        
+    
         <div class = "container" id = "order-container">
             <h2 id = "order-title">Your Order</h2>
             <!-- ordered items rendered in order-section -->
            <section id = "order-section"> </section>
 
+            <!-- Total Price -->
             <div id = "total-price">
                 <h2>Total price</h2>
                 <h3 id = "total"></h3>
@@ -30,6 +33,45 @@
             <button class = "container" id = "complete-order-btn">Complete order</button>
         </div>
 
+        <!-- Form -->
+        <section id = "card-section">
+            <form id = "card-form">
+                <h2>Enter card details</h2>
+                <!-- <label for = "customerName">Customer Name</label> -->
+                <input
+                    type = "text"
+                    id = "customerName"
+                    aria-label = "Full name"
+                    placeholder="Enter your name"
+                    required
+                    pattern="[a-zA-Z]+"
+                >
+                <!-- <label for="cardNumber">Card Number</label> -->
+                <!-- min = 10 is not added for testing purpose -->
+                <input
+                    required
+                    type = "number" 
+                    id = "cardNumber"
+                    placeholder="Enter card number"
+                >
+                
+                <!-- <label for ="cvv">CVV</label>  -->
+                <input
+                    required
+                    type = "number" 
+                    id = "cvv"
+                    placeholder="Enter CVV"
+                    max ="3"
+                >
+                <input type="submit" id = "pay" value="Pay">
+                    
+            </form>
+        </section>
+        
+        <!-- Greetings -->
+        <div id = "confirmation">
+            <h1 id = "message"></h1>
+        </div>
         <script src="index.js" type="module"></script>
     </body>
 </html>
