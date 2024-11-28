@@ -139,7 +139,7 @@ img{
     right:20px;
     left:20px;
     background-color: white;
-    border: 1px solid black;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.6);
     border-radius: 6px;
     display: flex;
     flex-direction: column;
@@ -147,6 +147,16 @@ img{
     margin: 15px auto 15px auto; 
     padding: 20px;
     font-family: sans-serif
+}
+#close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background-color: white;
+    font-size: 30px;
+    color: #757575;
+    cursor: pointer;
 }
 input{
     width: 500px;

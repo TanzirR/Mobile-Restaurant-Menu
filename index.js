@@ -10,6 +10,7 @@ const confirmation = document.getElementById("confirmation")
 const message = document.getElementById("message")
 const customerName = document.getElementById("customerName")
 const pay = document.getElementById("pay")
+const closeBtn = document.getElementById("close")
 
 let renderMenuList = menuArray.map(function(items){
 
@@ -89,6 +90,12 @@ pay.addEventListener("click", function(e){
     confirmation.style.display = "block"
 
 })
+
+//Button for closing form window
+closeBtn.addEventListener("click", function(e){
+     cardSection.style.display = "none"
+})
+
 
 function renderOrderedList(){
     return orderedFood.map(function(food){
