@@ -91,6 +91,7 @@ userInfoForm.addEventListener("submit", function(e){
     orderContainer.style.display = "none"
     message.textContent = `Thanks, ${customerName.value}! Your order is on it's way!`
     confirmation.style.display = "block"
+    orderedFood.length = 0
     userInfoForm.reset()
     
 })
