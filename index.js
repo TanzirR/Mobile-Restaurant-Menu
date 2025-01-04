@@ -8,9 +8,9 @@ const completeOrderBtn = document.getElementById("complete-order-btn")
 const cardSection = document.getElementById("card-section")
 const confirmation = document.getElementById("confirmation")
 const message = document.getElementById("message")
-const customerName = document.getElementById("customerName")
-const pay = document.getElementById("pay")
 const closeBtn = document.getElementById("close")
+const userInfoForm = document.getElementById("card-form")
+const customerName = document.getElementById("customerName")
 
 let renderMenuList = menuArray.map(function(items){
 
@@ -80,15 +80,19 @@ orderSectionId.addEventListener("click", function(e){
 //Button for completing the order and showing the form 
 completeOrderBtn.addEventListener("click", function(e){ 
     cardSection.style.display = "block"
+    
 })
 
-//Button for paying
-pay.addEventListener("click", function(e){
+//User Information Form 
+userInfoForm.addEventListener("submit", function(e){
+    //Prevent the form from reloading
+    e.preventDefault()
     cardSection.style.display = "none"
     orderContainer.style.display = "none"
     message.textContent = `Thanks, ${customerName.value}! Your order is on it's way!`
     confirmation.style.display = "block"
-
+    userInfoForm.reset()
+    
 })
 
 //Button for closing form window

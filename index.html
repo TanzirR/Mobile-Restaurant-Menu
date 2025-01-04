@@ -33,18 +33,23 @@
             <button class = "container" id = "complete-order-btn">Complete order</button>
         </div>
 
+        <!-- Greetings -->
+        <div id = "confirmation">
+            <h1 id = "message"></h1>
+        </div>
+
         <!-- Form -->
         <section id = "card-section">
             <form id = "card-form">
                 <h2>Enter card details</h2>
                 <!-- <label for = "customerName">Customer Name</label> -->
                 <input
+                    required
                     type = "text"
                     id = "customerName"
                     aria-label = "Full name"
                     placeholder="Enter your name"
-                    required
-                    pattern="[a-zA-Z]+"
+                    
                 >
                 <!-- <label for="cardNumber">Card Number</label> -->
                 <!-- min = 10 is not added for testing purpose -->
@@ -61,17 +66,13 @@
                     type = "number" 
                     id = "cvv"
                     placeholder="Enter CVV"
-                    max ="3"
                 >
                 <input type="submit" id = "pay" value="Pay">
-                <button id = "close">x</button>
+                <button type = "button" id = "close">x</button>
             </form>
         </section>
         
-        <!-- Greetings -->
-        <div id = "confirmation">
-            <h1 id = "message"></h1>
-        </div>
+        
         <script src="index.js" type="module"></script>
     </body>
 </html>
