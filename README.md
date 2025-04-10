@@ -7,7 +7,7 @@ A **frontend single-page mobile app** designed for ordering food. This project i
 ## 🛠️ Features
 
 - Interactive food menu with item details.
-- Add items to the cart with a dynamic total price calculation.
+- Add/Remove items to the cart with a dynamic total price calculation.
 - Simple and clean UI styled with CSS.
 - Fully functional using **vanilla JavaScript** (no frameworks or libraries).
 
