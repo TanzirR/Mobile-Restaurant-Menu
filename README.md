@@ -58,6 +58,4 @@ If you have any questions, feedback, or just want to connect, feel free to reach
 - **GitHub:** [TanzirR](https://github.com/TanzirR)
 - **Email:** [tanzir.razzaque@northsouth.edu](mailto:tanzir.razzaque@northsouth.edu)
 
----
 
-Thank you for checking out **Mobile Restaurant Menu**! Happy coding! 🍴
